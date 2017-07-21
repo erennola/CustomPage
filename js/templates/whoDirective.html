@@ -1,0 +1,23 @@
+<div ng-repeat="who in wd.whoList">
+  <div ng-class= "{'odd' : who.class == 'odd'}" class="text-container">
+    <h2 class="mt40 pt40 text-center">{{who.title}}</h2>
+    <div class="row center-margin">
+    <div ng-if = "who.class === 'normal'">
+      <div class="display-inline text-center content-text">
+        <p>{{who.text}}</p>
+      </div>
+      <div class="display-inline text-center">
+        <img  ng-src="images/{{who.img}}" alt="happy-face" />
+      </div>
+      </div>
+      <div ng-if = "who.class === 'odd'">
+      <div class="display-inline text-center">
+        <img  ng-src="images/{{who.img}}" alt="happy-face" />
+      </div>
+      <div class="display-inline text-center content-text">
+        <p>{{who.text}}</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

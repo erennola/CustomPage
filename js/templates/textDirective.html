@@ -1,0 +1,24 @@
+<div ng-repeat="text in td.textList">
+  <div ng-class= "{'odd' : text.class == 'odd'}" class="post text-container">
+    <div class="row center-margin">
+      <div ng-if = "text.class === 'normal'">
+        <div class="display-inline text-center">
+          <img ng-src="images/{{text.img}}" alt="Coffee-Love" />
+        </div>
+        <div class="display-inline text-center pl30 pr30  content-text">
+          <h2 class="mb10">{{text.title}}</h2>
+          <p>{{text.text}}</p>
+        </div>
+      </div>
+      <div ng-if = "text.class === 'odd'">
+        <div class="display-inline text-center pl30 pr30 content-text">
+          <h2 class="mb10">{{text.title}}</h2>
+          <p>{{text.text}}</p>
+        </div>
+        <div class="display-inline text-center">
+          <img ng-src="images/{{text.img}}" alt="happy-face" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

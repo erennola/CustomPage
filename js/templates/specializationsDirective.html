@@ -1,0 +1,23 @@
+<div ng-repeat="spec in sd.specializationsList">
+  <div ng-class= "{'odd' : spec.class == 'odd'}" class="text-container">
+    <h2 class="mt40 pt40 text-center">{{spec.title}}</h2>
+    <div class="row center-margin">
+     <div ng-if = "spec.class === 'normal'">
+      <div class="display-inline text-center content-text">
+        <p>{{spec.text}}</p>
+      </div>
+      <div class="display-inline text-center">
+        <img  ng-src="images/{{spec.img}}" alt="happy-face" />
+      </div>
+      </div>
+      <div ng-if = "spec.class === 'odd'">
+      <div class="display-inline text-center">
+        <img  ng-src="images/{{spec.img}}" alt="happy-face" />
+      </div>
+      <div class="display-inline text-center content-text">
+        <p>{{spec.text}}</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

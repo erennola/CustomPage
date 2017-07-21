@@ -1,0 +1,1848 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,700,700italic,300italic,300,400italic);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,700,700italic,300italic,300,400italic);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,700,700italic,300italic,300,400italic);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic);
+/* line 6, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../scss/_reset.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 37, ../scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 40, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 43, ../scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 48, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 16, ../scss/_global.scss */
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 20, ../scss/_global.scss */
+h2 {
+  font-family: 'Vollkorn', sans-serif;
+}
+
+/* line 25, ../scss/_global.scss */
+a {
+  color: #bd835d;
+}
+/* line 28, ../scss/_global.scss */
+a:hover, a:focus {
+  color: #7c553c;
+  text-decoration: none;
+}
+
+/* line 35, ../scss/_global.scss */
+.brown {
+  color: #bd835d;
+}
+
+/* line 39, ../scss/_global.scss */
+.underlined {
+  text-decoration: underline;
+}
+
+/* line 43, ../scss/_global.scss */
+.selected {
+  color: #7c553c;
+  text-decoration: none;
+}
+
+/* line 48, ../scss/_global.scss */
+.content {
+  height: 100%;
+}
+
+/* line 52, ../scss/_global.scss */
+.hidden {
+  opacity: 0;
+}
+
+/* line 56, ../scss/_global.scss */
+.visible {
+  opacity: 1;
+}
+
+/* line 60, ../scss/_global.scss */
+.mr0 {
+  margin-right: 0px;
+}
+
+/* line 61, ../scss/_global.scss */
+.mr10 {
+  margin-right: 10px;
+}
+
+/* line 62, ../scss/_global.scss */
+.mr15 {
+  margin-right: 15px;
+}
+
+/* line 63, ../scss/_global.scss */
+.mr20 {
+  margin-right: 20px;
+}
+
+/* line 64, ../scss/_global.scss */
+.mr30 {
+  margin-right: 30px;
+}
+
+/* line 65, ../scss/_global.scss */
+.mr40 {
+  margin-right: 40px;
+}
+
+/* line 66, ../scss/_global.scss */
+.mr50 {
+  margin-right: 50px;
+}
+
+/* line 68, ../scss/_global.scss */
+.ml0 {
+  margin-left: 0px;
+}
+
+/* line 69, ../scss/_global.scss */
+.ml10 {
+  margin-left: 10px;
+}
+
+/* line 70, ../scss/_global.scss */
+.ml15 {
+  margin-left: 15px;
+}
+
+/* line 71, ../scss/_global.scss */
+.ml20 {
+  margin-left: 20px;
+}
+
+/* line 72, ../scss/_global.scss */
+.ml30 {
+  margin-left: 30px;
+}
+
+/* line 73, ../scss/_global.scss */
+.ml40 {
+  margin-left: 40px;
+}
+
+/* line 74, ../scss/_global.scss */
+.ml50 {
+  margin-left: 50px;
+}
+
+/* line 76, ../scss/_global.scss */
+.mt0 {
+  margin-top: 0px;
+}
+
+/* line 77, ../scss/_global.scss */
+.mt10 {
+  margin-top: 10px;
+}
+
+/* line 78, ../scss/_global.scss */
+.mt15 {
+  margin-top: 15px;
+}
+
+/* line 79, ../scss/_global.scss */
+.mt20 {
+  margin-top: 20px;
+}
+
+/* line 80, ../scss/_global.scss */
+.mt30 {
+  margin-top: 30px;
+}
+
+/* line 81, ../scss/_global.scss */
+.mt40 {
+  margin-top: 40px;
+}
+
+/* line 82, ../scss/_global.scss */
+.mt50 {
+  margin-top: 50px;
+}
+
+/* line 83, ../scss/_global.scss */
+.mt60 {
+  margin-top: 60px;
+}
+
+/* line 84, ../scss/_global.scss */
+.mt70 {
+  margin-top: 70px;
+}
+
+/* line 85, ../scss/_global.scss */
+.mt80 {
+  margin-top: 80px;
+}
+
+/* line 86, ../scss/_global.scss */
+.mt90 {
+  margin-top: 90px;
+}
+
+/* line 87, ../scss/_global.scss */
+.mt100 {
+  margin-top: 100px;
+}
+
+/* line 88, ../scss/_global.scss */
+.mt110 {
+  margin-top: 110px;
+}
+
+/* line 89, ../scss/_global.scss */
+.mt120 {
+  margin-top: 120px;
+}
+
+/* line 91, ../scss/_global.scss */
+.mb0 {
+  margin-bottom: 0px;
+}
+
+/* line 92, ../scss/_global.scss */
+.mb10 {
+  margin-bottom: 10px;
+}
+
+/* line 93, ../scss/_global.scss */
+.mb20 {
+  margin-bottom: 20px;
+}
+
+/* line 94, ../scss/_global.scss */
+.mb25 {
+  margin-bottom: 25px;
+}
+
+/* line 95, ../scss/_global.scss */
+.mb30 {
+  margin-bottom: 30px;
+}
+
+/* line 96, ../scss/_global.scss */
+.mb40 {
+  margin-bottom: 40px;
+}
+
+/* line 97, ../scss/_global.scss */
+.mb50 {
+  margin-bottom: 50px;
+}
+
+/* line 98, ../scss/_global.scss */
+.mb60 {
+  margin-bottom: 60px;
+}
+
+/* line 99, ../scss/_global.scss */
+.mb70 {
+  margin-bottom: 70px;
+}
+
+/* line 100, ../scss/_global.scss */
+.mb80 {
+  margin-bottom: 80px;
+}
+
+/* line 101, ../scss/_global.scss */
+.mb90 {
+  margin-bottom: 90px;
+}
+
+/* line 102, ../scss/_global.scss */
+.mb100 {
+  margin-bottom: 100px;
+}
+
+/* line 104, ../scss/_global.scss */
+.pt0 {
+  padding-top: 0px;
+}
+
+/* line 105, ../scss/_global.scss */
+.pt10 {
+  padding-top: 10px;
+}
+
+/* line 106, ../scss/_global.scss */
+.pt15 {
+  padding-top: 15px;
+}
+
+/* line 107, ../scss/_global.scss */
+.pt20 {
+  padding-top: 20px;
+}
+
+/* line 108, ../scss/_global.scss */
+.pt30 {
+  padding-top: 30px;
+}
+
+/* line 109, ../scss/_global.scss */
+.pt40 {
+  padding-top: 40px;
+}
+
+/* line 110, ../scss/_global.scss */
+.pt50 {
+  padding-top: 50px;
+}
+
+/* line 111, ../scss/_global.scss */
+.pt60 {
+  padding-top: 60px;
+}
+
+/* line 112, ../scss/_global.scss */
+.pt70 {
+  padding-top: 70px;
+}
+
+/* line 113, ../scss/_global.scss */
+.pt80 {
+  padding-top: 80px;
+}
+
+/* line 114, ../scss/_global.scss */
+.pt90 {
+  padding-top: 90px;
+}
+
+/* line 115, ../scss/_global.scss */
+.pt100 {
+  padding-top: 100px;
+}
+
+/* line 116, ../scss/_global.scss */
+.pt110 {
+  padding-top: 110px;
+}
+
+/* line 117, ../scss/_global.scss */
+.pt120 {
+  padding-top: 120px;
+}
+
+/* line 119, ../scss/_global.scss */
+.pb0 {
+  padding-bottom: 0px;
+}
+
+/* line 120, ../scss/_global.scss */
+.pb10 {
+  padding-bottom: 10px;
+}
+
+/* line 121, ../scss/_global.scss */
+.pb20 {
+  padding-bottom: 20px;
+}
+
+/* line 122, ../scss/_global.scss */
+.pb25 {
+  padding-bottom: 25px;
+}
+
+/* line 123, ../scss/_global.scss */
+.pb30 {
+  padding-bottom: 30px;
+}
+
+/* line 124, ../scss/_global.scss */
+.pb40 {
+  padding-bottom: 40px;
+}
+
+/* line 125, ../scss/_global.scss */
+.pb50 {
+  padding-bottom: 50px;
+}
+
+/* line 126, ../scss/_global.scss */
+.pb60 {
+  padding-bottom: 60px;
+}
+
+/* line 127, ../scss/_global.scss */
+.pb70 {
+  padding-bottom: 70px;
+}
+
+/* line 128, ../scss/_global.scss */
+.pb80 {
+  padding-bottom: 80px;
+}
+
+/* line 129, ../scss/_global.scss */
+.pb90 {
+  padding-bottom: 90px;
+}
+
+/* line 130, ../scss/_global.scss */
+.pb100 {
+  padding-bottom: 100px;
+}
+
+/* line 132, ../scss/_global.scss */
+.pl10 {
+  padding-left: 10px;
+}
+
+/* line 133, ../scss/_global.scss */
+.pl20 {
+  padding-left: 30px;
+}
+
+/* line 134, ../scss/_global.scss */
+.pl30 {
+  padding-left: 30px;
+}
+
+/* line 136, ../scss/_global.scss */
+.pr10 {
+  padding-right: 10px;
+}
+
+/* line 137, ../scss/_global.scss */
+.pr20 {
+  padding-right: 20px;
+}
+
+/* line 138, ../scss/_global.scss */
+.pr30 {
+  padding-right: 30px;
+}
+
+/* line 140, ../scss/_global.scss */
+.display-inline {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  width: 49%;
+}
+@media (max-width: 767px) {
+  /* line 140, ../scss/_global.scss */
+  .display-inline {
+    width: 100%;
+  }
+}
+
+/* line 151, ../scss/_global.scss */
+.hidden-div {
+  opacity: 0;
+}
+
+/* line 155, ../scss/_global.scss */
+.visible-div {
+  opacity: 1;
+}
+
+/* line 159, ../scss/_global.scss */
+.center-margin {
+  margin: 0 auto;
+}
+
+/* line 16, ../scss/_global.scss */
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 20, ../scss/_global.scss */
+h2 {
+  font-family: 'Vollkorn', sans-serif;
+}
+
+/* line 25, ../scss/_global.scss */
+a {
+  color: #bd835d;
+}
+/* line 28, ../scss/_global.scss */
+a:hover, a:focus {
+  color: #7c553c;
+  text-decoration: none;
+}
+
+/* line 35, ../scss/_global.scss */
+.brown {
+  color: #bd835d;
+}
+
+/* line 39, ../scss/_global.scss */
+.underlined {
+  text-decoration: underline;
+}
+
+/* line 43, ../scss/_global.scss */
+.selected {
+  color: #7c553c;
+  text-decoration: none;
+}
+
+/* line 48, ../scss/_global.scss */
+.content {
+  height: 100%;
+}
+
+/* line 52, ../scss/_global.scss */
+.hidden {
+  opacity: 0;
+}
+
+/* line 56, ../scss/_global.scss */
+.visible {
+  opacity: 1;
+}
+
+/* line 60, ../scss/_global.scss */
+.mr0 {
+  margin-right: 0px;
+}
+
+/* line 61, ../scss/_global.scss */
+.mr10 {
+  margin-right: 10px;
+}
+
+/* line 62, ../scss/_global.scss */
+.mr15 {
+  margin-right: 15px;
+}
+
+/* line 63, ../scss/_global.scss */
+.mr20 {
+  margin-right: 20px;
+}
+
+/* line 64, ../scss/_global.scss */
+.mr30 {
+  margin-right: 30px;
+}
+
+/* line 65, ../scss/_global.scss */
+.mr40 {
+  margin-right: 40px;
+}
+
+/* line 66, ../scss/_global.scss */
+.mr50 {
+  margin-right: 50px;
+}
+
+/* line 68, ../scss/_global.scss */
+.ml0 {
+  margin-left: 0px;
+}
+
+/* line 69, ../scss/_global.scss */
+.ml10 {
+  margin-left: 10px;
+}
+
+/* line 70, ../scss/_global.scss */
+.ml15 {
+  margin-left: 15px;
+}
+
+/* line 71, ../scss/_global.scss */
+.ml20 {
+  margin-left: 20px;
+}
+
+/* line 72, ../scss/_global.scss */
+.ml30 {
+  margin-left: 30px;
+}
+
+/* line 73, ../scss/_global.scss */
+.ml40 {
+  margin-left: 40px;
+}
+
+/* line 74, ../scss/_global.scss */
+.ml50 {
+  margin-left: 50px;
+}
+
+/* line 76, ../scss/_global.scss */
+.mt0 {
+  margin-top: 0px;
+}
+
+/* line 77, ../scss/_global.scss */
+.mt10 {
+  margin-top: 10px;
+}
+
+/* line 78, ../scss/_global.scss */
+.mt15 {
+  margin-top: 15px;
+}
+
+/* line 79, ../scss/_global.scss */
+.mt20 {
+  margin-top: 20px;
+}
+
+/* line 80, ../scss/_global.scss */
+.mt30 {
+  margin-top: 30px;
+}
+
+/* line 81, ../scss/_global.scss */
+.mt40 {
+  margin-top: 40px;
+}
+
+/* line 82, ../scss/_global.scss */
+.mt50 {
+  margin-top: 50px;
+}
+
+/* line 83, ../scss/_global.scss */
+.mt60 {
+  margin-top: 60px;
+}
+
+/* line 84, ../scss/_global.scss */
+.mt70 {
+  margin-top: 70px;
+}
+
+/* line 85, ../scss/_global.scss */
+.mt80 {
+  margin-top: 80px;
+}
+
+/* line 86, ../scss/_global.scss */
+.mt90 {
+  margin-top: 90px;
+}
+
+/* line 87, ../scss/_global.scss */
+.mt100 {
+  margin-top: 100px;
+}
+
+/* line 88, ../scss/_global.scss */
+.mt110 {
+  margin-top: 110px;
+}
+
+/* line 89, ../scss/_global.scss */
+.mt120 {
+  margin-top: 120px;
+}
+
+/* line 91, ../scss/_global.scss */
+.mb0 {
+  margin-bottom: 0px;
+}
+
+/* line 92, ../scss/_global.scss */
+.mb10 {
+  margin-bottom: 10px;
+}
+
+/* line 93, ../scss/_global.scss */
+.mb20 {
+  margin-bottom: 20px;
+}
+
+/* line 94, ../scss/_global.scss */
+.mb25 {
+  margin-bottom: 25px;
+}
+
+/* line 95, ../scss/_global.scss */
+.mb30 {
+  margin-bottom: 30px;
+}
+
+/* line 96, ../scss/_global.scss */
+.mb40 {
+  margin-bottom: 40px;
+}
+
+/* line 97, ../scss/_global.scss */
+.mb50 {
+  margin-bottom: 50px;
+}
+
+/* line 98, ../scss/_global.scss */
+.mb60 {
+  margin-bottom: 60px;
+}
+
+/* line 99, ../scss/_global.scss */
+.mb70 {
+  margin-bottom: 70px;
+}
+
+/* line 100, ../scss/_global.scss */
+.mb80 {
+  margin-bottom: 80px;
+}
+
+/* line 101, ../scss/_global.scss */
+.mb90 {
+  margin-bottom: 90px;
+}
+
+/* line 102, ../scss/_global.scss */
+.mb100 {
+  margin-bottom: 100px;
+}
+
+/* line 104, ../scss/_global.scss */
+.pt0 {
+  padding-top: 0px;
+}
+
+/* line 105, ../scss/_global.scss */
+.pt10 {
+  padding-top: 10px;
+}
+
+/* line 106, ../scss/_global.scss */
+.pt15 {
+  padding-top: 15px;
+}
+
+/* line 107, ../scss/_global.scss */
+.pt20 {
+  padding-top: 20px;
+}
+
+/* line 108, ../scss/_global.scss */
+.pt30 {
+  padding-top: 30px;
+}
+
+/* line 109, ../scss/_global.scss */
+.pt40 {
+  padding-top: 40px;
+}
+
+/* line 110, ../scss/_global.scss */
+.pt50 {
+  padding-top: 50px;
+}
+
+/* line 111, ../scss/_global.scss */
+.pt60 {
+  padding-top: 60px;
+}
+
+/* line 112, ../scss/_global.scss */
+.pt70 {
+  padding-top: 70px;
+}
+
+/* line 113, ../scss/_global.scss */
+.pt80 {
+  padding-top: 80px;
+}
+
+/* line 114, ../scss/_global.scss */
+.pt90 {
+  padding-top: 90px;
+}
+
+/* line 115, ../scss/_global.scss */
+.pt100 {
+  padding-top: 100px;
+}
+
+/* line 116, ../scss/_global.scss */
+.pt110 {
+  padding-top: 110px;
+}
+
+/* line 117, ../scss/_global.scss */
+.pt120 {
+  padding-top: 120px;
+}
+
+/* line 119, ../scss/_global.scss */
+.pb0 {
+  padding-bottom: 0px;
+}
+
+/* line 120, ../scss/_global.scss */
+.pb10 {
+  padding-bottom: 10px;
+}
+
+/* line 121, ../scss/_global.scss */
+.pb20 {
+  padding-bottom: 20px;
+}
+
+/* line 122, ../scss/_global.scss */
+.pb25 {
+  padding-bottom: 25px;
+}
+
+/* line 123, ../scss/_global.scss */
+.pb30 {
+  padding-bottom: 30px;
+}
+
+/* line 124, ../scss/_global.scss */
+.pb40 {
+  padding-bottom: 40px;
+}
+
+/* line 125, ../scss/_global.scss */
+.pb50 {
+  padding-bottom: 50px;
+}
+
+/* line 126, ../scss/_global.scss */
+.pb60 {
+  padding-bottom: 60px;
+}
+
+/* line 127, ../scss/_global.scss */
+.pb70 {
+  padding-bottom: 70px;
+}
+
+/* line 128, ../scss/_global.scss */
+.pb80 {
+  padding-bottom: 80px;
+}
+
+/* line 129, ../scss/_global.scss */
+.pb90 {
+  padding-bottom: 90px;
+}
+
+/* line 130, ../scss/_global.scss */
+.pb100 {
+  padding-bottom: 100px;
+}
+
+/* line 132, ../scss/_global.scss */
+.pl10 {
+  padding-left: 10px;
+}
+
+/* line 133, ../scss/_global.scss */
+.pl20 {
+  padding-left: 30px;
+}
+
+/* line 134, ../scss/_global.scss */
+.pl30 {
+  padding-left: 30px;
+}
+
+/* line 136, ../scss/_global.scss */
+.pr10 {
+  padding-right: 10px;
+}
+
+/* line 137, ../scss/_global.scss */
+.pr20 {
+  padding-right: 20px;
+}
+
+/* line 138, ../scss/_global.scss */
+.pr30 {
+  padding-right: 30px;
+}
+
+/* line 140, ../scss/_global.scss */
+.display-inline {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  width: 49%;
+}
+@media (max-width: 767px) {
+  /* line 140, ../scss/_global.scss */
+  .display-inline {
+    width: 100%;
+  }
+}
+
+/* line 151, ../scss/_global.scss */
+.hidden-div {
+  opacity: 0;
+}
+
+/* line 155, ../scss/_global.scss */
+.visible-div {
+  opacity: 1;
+}
+
+/* line 159, ../scss/_global.scss */
+.center-margin {
+  margin: 0 auto;
+}
+
+/* line 4, ../scss/_home.scss */
+.home-container {
+  height: 100%;
+}
+/* line 7, ../scss/_home.scss */
+.home-container .title {
+  background: linear-gradient(black, rgba(0, 0, 0, 0.3)), url("/images/wallpaper.jpg");
+  background-position: center top;
+}
+/* line 10, ../scss/_home.scss */
+.home-container .title h2 {
+  font-size: 42px;
+  vertical-align: middle;
+  padding: 200px 300px;
+  color: #fff;
+}
+/* line 18, ../scss/_home.scss */
+.home-container img {
+  border: 1px solid #fff;
+  height: auto;
+  margin: 60px auto;
+  position: relative;
+  width: 300px;
+}
+/* line 25, ../scss/_home.scss */
+.home-container img:before {
+  border: 1px solid #000;
+  content: '';
+  width: 198px;
+  height: 198px;
+  position: absolute;
+}
+/* line 33, ../scss/_home.scss */
+.home-container img:after {
+  content: '';
+  position: absolute;
+  width: 196px;
+  height: 196px;
+  border: 1px solid #000;
+  left: 1px;
+  top: 1px;
+}
+@media (max-width: 767px) {
+  /* line 18, ../scss/_home.scss */
+  .home-container img {
+    width: 60%;
+    height: auto;
+  }
+}
+/* line 48, ../scss/_home.scss */
+.home-container h2 {
+  font-size: 22px;
+}
+/* line 52, ../scss/_home.scss */
+.home-container .cafe {
+  background-color: #7c553c;
+  padding-bottom: 60px;
+}
+/* line 56, ../scss/_home.scss */
+.home-container .cafe .slick-coffe {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+/* line 61, ../scss/_home.scss */
+.home-container .cafe .slick-coffe img {
+  height: 200px;
+  width: 200px;
+}
+/* line 72, ../scss/_home.scss */
+.home-container .text-container img {
+  -webkit-box-shadow: 0px 7px 5px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 5px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 5px 5px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 767px) {
+  /* line 78, ../scss/_home.scss */
+  .home-container .content-text {
+    padding-bottom: 60px;
+  }
+}
+/* line 85, ../scss/_home.scss */
+.home-container .odd {
+  background-color: #7c553c;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  /* line 89, ../scss/_home.scss */
+  .home-container .odd .content-text {
+    padding-bottom: 0px;
+    padding-top: 60px;
+  }
+}
+
+/* line 16, ../scss/_global.scss */
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 20, ../scss/_global.scss */
+h2 {
+  font-family: 'Vollkorn', sans-serif;
+}
+
+/* line 25, ../scss/_global.scss */
+a {
+  color: #bd835d;
+}
+/* line 28, ../scss/_global.scss */
+a:hover, a:focus {
+  color: #7c553c;
+  text-decoration: none;
+}
+
+/* line 35, ../scss/_global.scss */
+.brown {
+  color: #bd835d;
+}
+
+/* line 39, ../scss/_global.scss */
+.underlined {
+  text-decoration: underline;
+}
+
+/* line 43, ../scss/_global.scss */
+.selected {
+  color: #7c553c;
+  text-decoration: none;
+}
+
+/* line 48, ../scss/_global.scss */
+.content {
+  height: 100%;
+}
+
+/* line 52, ../scss/_global.scss */
+.hidden {
+  opacity: 0;
+}
+
+/* line 56, ../scss/_global.scss */
+.visible {
+  opacity: 1;
+}
+
+/* line 60, ../scss/_global.scss */
+.mr0 {
+  margin-right: 0px;
+}
+
+/* line 61, ../scss/_global.scss */
+.mr10 {
+  margin-right: 10px;
+}
+
+/* line 62, ../scss/_global.scss */
+.mr15 {
+  margin-right: 15px;
+}
+
+/* line 63, ../scss/_global.scss */
+.mr20 {
+  margin-right: 20px;
+}
+
+/* line 64, ../scss/_global.scss */
+.mr30 {
+  margin-right: 30px;
+}
+
+/* line 65, ../scss/_global.scss */
+.mr40 {
+  margin-right: 40px;
+}
+
+/* line 66, ../scss/_global.scss */
+.mr50 {
+  margin-right: 50px;
+}
+
+/* line 68, ../scss/_global.scss */
+.ml0 {
+  margin-left: 0px;
+}
+
+/* line 69, ../scss/_global.scss */
+.ml10 {
+  margin-left: 10px;
+}
+
+/* line 70, ../scss/_global.scss */
+.ml15 {
+  margin-left: 15px;
+}
+
+/* line 71, ../scss/_global.scss */
+.ml20 {
+  margin-left: 20px;
+}
+
+/* line 72, ../scss/_global.scss */
+.ml30 {
+  margin-left: 30px;
+}
+
+/* line 73, ../scss/_global.scss */
+.ml40 {
+  margin-left: 40px;
+}
+
+/* line 74, ../scss/_global.scss */
+.ml50 {
+  margin-left: 50px;
+}
+
+/* line 76, ../scss/_global.scss */
+.mt0 {
+  margin-top: 0px;
+}
+
+/* line 77, ../scss/_global.scss */
+.mt10 {
+  margin-top: 10px;
+}
+
+/* line 78, ../scss/_global.scss */
+.mt15 {
+  margin-top: 15px;
+}
+
+/* line 79, ../scss/_global.scss */
+.mt20 {
+  margin-top: 20px;
+}
+
+/* line 80, ../scss/_global.scss */
+.mt30 {
+  margin-top: 30px;
+}
+
+/* line 81, ../scss/_global.scss */
+.mt40 {
+  margin-top: 40px;
+}
+
+/* line 82, ../scss/_global.scss */
+.mt50 {
+  margin-top: 50px;
+}
+
+/* line 83, ../scss/_global.scss */
+.mt60 {
+  margin-top: 60px;
+}
+
+/* line 84, ../scss/_global.scss */
+.mt70 {
+  margin-top: 70px;
+}
+
+/* line 85, ../scss/_global.scss */
+.mt80 {
+  margin-top: 80px;
+}
+
+/* line 86, ../scss/_global.scss */
+.mt90 {
+  margin-top: 90px;
+}
+
+/* line 87, ../scss/_global.scss */
+.mt100 {
+  margin-top: 100px;
+}
+
+/* line 88, ../scss/_global.scss */
+.mt110 {
+  margin-top: 110px;
+}
+
+/* line 89, ../scss/_global.scss */
+.mt120 {
+  margin-top: 120px;
+}
+
+/* line 91, ../scss/_global.scss */
+.mb0 {
+  margin-bottom: 0px;
+}
+
+/* line 92, ../scss/_global.scss */
+.mb10 {
+  margin-bottom: 10px;
+}
+
+/* line 93, ../scss/_global.scss */
+.mb20 {
+  margin-bottom: 20px;
+}
+
+/* line 94, ../scss/_global.scss */
+.mb25 {
+  margin-bottom: 25px;
+}
+
+/* line 95, ../scss/_global.scss */
+.mb30 {
+  margin-bottom: 30px;
+}
+
+/* line 96, ../scss/_global.scss */
+.mb40 {
+  margin-bottom: 40px;
+}
+
+/* line 97, ../scss/_global.scss */
+.mb50 {
+  margin-bottom: 50px;
+}
+
+/* line 98, ../scss/_global.scss */
+.mb60 {
+  margin-bottom: 60px;
+}
+
+/* line 99, ../scss/_global.scss */
+.mb70 {
+  margin-bottom: 70px;
+}
+
+/* line 100, ../scss/_global.scss */
+.mb80 {
+  margin-bottom: 80px;
+}
+
+/* line 101, ../scss/_global.scss */
+.mb90 {
+  margin-bottom: 90px;
+}
+
+/* line 102, ../scss/_global.scss */
+.mb100 {
+  margin-bottom: 100px;
+}
+
+/* line 104, ../scss/_global.scss */
+.pt0 {
+  padding-top: 0px;
+}
+
+/* line 105, ../scss/_global.scss */
+.pt10 {
+  padding-top: 10px;
+}
+
+/* line 106, ../scss/_global.scss */
+.pt15 {
+  padding-top: 15px;
+}
+
+/* line 107, ../scss/_global.scss */
+.pt20 {
+  padding-top: 20px;
+}
+
+/* line 108, ../scss/_global.scss */
+.pt30 {
+  padding-top: 30px;
+}
+
+/* line 109, ../scss/_global.scss */
+.pt40 {
+  padding-top: 40px;
+}
+
+/* line 110, ../scss/_global.scss */
+.pt50 {
+  padding-top: 50px;
+}
+
+/* line 111, ../scss/_global.scss */
+.pt60 {
+  padding-top: 60px;
+}
+
+/* line 112, ../scss/_global.scss */
+.pt70 {
+  padding-top: 70px;
+}
+
+/* line 113, ../scss/_global.scss */
+.pt80 {
+  padding-top: 80px;
+}
+
+/* line 114, ../scss/_global.scss */
+.pt90 {
+  padding-top: 90px;
+}
+
+/* line 115, ../scss/_global.scss */
+.pt100 {
+  padding-top: 100px;
+}
+
+/* line 116, ../scss/_global.scss */
+.pt110 {
+  padding-top: 110px;
+}
+
+/* line 117, ../scss/_global.scss */
+.pt120 {
+  padding-top: 120px;
+}
+
+/* line 119, ../scss/_global.scss */
+.pb0 {
+  padding-bottom: 0px;
+}
+
+/* line 120, ../scss/_global.scss */
+.pb10 {
+  padding-bottom: 10px;
+}
+
+/* line 121, ../scss/_global.scss */
+.pb20 {
+  padding-bottom: 20px;
+}
+
+/* line 122, ../scss/_global.scss */
+.pb25 {
+  padding-bottom: 25px;
+}
+
+/* line 123, ../scss/_global.scss */
+.pb30 {
+  padding-bottom: 30px;
+}
+
+/* line 124, ../scss/_global.scss */
+.pb40 {
+  padding-bottom: 40px;
+}
+
+/* line 125, ../scss/_global.scss */
+.pb50 {
+  padding-bottom: 50px;
+}
+
+/* line 126, ../scss/_global.scss */
+.pb60 {
+  padding-bottom: 60px;
+}
+
+/* line 127, ../scss/_global.scss */
+.pb70 {
+  padding-bottom: 70px;
+}
+
+/* line 128, ../scss/_global.scss */
+.pb80 {
+  padding-bottom: 80px;
+}
+
+/* line 129, ../scss/_global.scss */
+.pb90 {
+  padding-bottom: 90px;
+}
+
+/* line 130, ../scss/_global.scss */
+.pb100 {
+  padding-bottom: 100px;
+}
+
+/* line 132, ../scss/_global.scss */
+.pl10 {
+  padding-left: 10px;
+}
+
+/* line 133, ../scss/_global.scss */
+.pl20 {
+  padding-left: 30px;
+}
+
+/* line 134, ../scss/_global.scss */
+.pl30 {
+  padding-left: 30px;
+}
+
+/* line 136, ../scss/_global.scss */
+.pr10 {
+  padding-right: 10px;
+}
+
+/* line 137, ../scss/_global.scss */
+.pr20 {
+  padding-right: 20px;
+}
+
+/* line 138, ../scss/_global.scss */
+.pr30 {
+  padding-right: 30px;
+}
+
+/* line 140, ../scss/_global.scss */
+.display-inline {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  width: 49%;
+}
+@media (max-width: 767px) {
+  /* line 140, ../scss/_global.scss */
+  .display-inline {
+    width: 100%;
+  }
+}
+
+/* line 151, ../scss/_global.scss */
+.hidden-div {
+  opacity: 0;
+}
+
+/* line 155, ../scss/_global.scss */
+.visible-div {
+  opacity: 1;
+}
+
+/* line 159, ../scss/_global.scss */
+.center-margin {
+  margin: 0 auto;
+}
+
+/* line 12, ../scss/_aboutUs.scss */
+.about-container .content h2 {
+  font-size: 32px;
+}
+/* line 16, ../scss/_aboutUs.scss */
+.about-container .content img {
+  border: 1px solid #fff;
+  height: auto;
+  margin: 60px auto;
+  position: relative;
+  width: 300px;
+}
+/* line 23, ../scss/_aboutUs.scss */
+.about-container .content img:before {
+  border: 1px solid #000;
+  content: '';
+  width: 198px;
+  height: 198px;
+  position: absolute;
+}
+/* line 31, ../scss/_aboutUs.scss */
+.about-container .content img:after {
+  content: '';
+  position: absolute;
+  width: 196px;
+  height: 196px;
+  border: 1px solid #000;
+  left: 1px;
+  top: 1px;
+}
+@media (max-width: 767px) {
+  /* line 16, ../scss/_aboutUs.scss */
+  .about-container .content img {
+    width: 60%;
+    height: auto;
+  }
+}
+/* line 45, ../scss/_aboutUs.scss */
+.about-container .content .text-container {
+  padding: 0px 20px;
+}
+/* line 48, ../scss/_aboutUs.scss */
+.about-container .content .text-container img {
+  -webkit-box-shadow: 0px 7px 5px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 5px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 5px 5px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 767px) {
+  /* line 54, ../scss/_aboutUs.scss */
+  .about-container .content .content-text {
+    padding-bottom: 60px;
+  }
+}
+/* line 61, ../scss/_aboutUs.scss */
+.about-container .content .odd {
+  background-color: #7c553c;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  /* line 65, ../scss/_aboutUs.scss */
+  .about-container .content .odd .content-text {
+    padding-bottom: 0px;
+    padding-top: 60px;
+  }
+}
+/* line 77, ../scss/_aboutUs.scss */
+.about-container .contact .contact-container {
+  background: linear-gradient(black, rgba(0, 0, 0, 0.3)), url("/images/wallpaper.jpg");
+  background-position: center top;
+}
+/* line 81, ../scss/_aboutUs.scss */
+.about-container .contact .contact-container .information {
+  color: #fff;
+}
+
+/* Slider */
+/* line 40, ../scss/_slick-theme.scss */
+.slick-loading .slick-list {
+  background: #fff url('/images/ajax-loader.gif?1465315658') center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url('/fonts/slick.eot?1465315658');
+  src: url('/fonts/slick.eot?&1465315658#iefix') format("embedded-opentype"), url('/fonts/slick.woff?1465315658') format("woff"), url('/fonts/slick.ttf?1465315658') format("truetype"), url('/fonts/slick.svg?1465315658#slick') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Arrows */
+/* line 58, ../scss/_slick-theme.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px\9;
+  /*lte IE 8*/
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+/* line 77, ../scss/_slick-theme.scss */
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+/* line 81, ../scss/_slick-theme.scss */
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+/* line 85, ../scss/_slick-theme.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+/* line 90, ../scss/_slick-theme.scss */
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 100, ../scss/_slick-theme.scss */
+.slick-prev {
+  left: -25px;
+}
+/* line 102, ../scss/_slick-theme.scss */
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: -25px;
+}
+/* line 106, ../scss/_slick-theme.scss */
+.slick-prev:before {
+  content: "←";
+}
+/* line 108, ../scss/_slick-theme.scss */
+[dir="rtl"] .slick-prev:before {
+  content: "→";
+}
+
+/* line 114, ../scss/_slick-theme.scss */
+.slick-next {
+  right: -25px;
+}
+/* line 116, ../scss/_slick-theme.scss */
+[dir="rtl"] .slick-next {
+  left: -25px;
+  right: auto;
+}
+/* line 120, ../scss/_slick-theme.scss */
+.slick-next:before {
+  content: "→";
+}
+/* line 122, ../scss/_slick-theme.scss */
+[dir="rtl"] .slick-next:before {
+  content: "←";
+}
+
+/* Dots */
+/* line 130, ../scss/_slick-theme.scss */
+.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 134, ../scss/_slick-theme.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+/* line 142, ../scss/_slick-theme.scss */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 150, ../scss/_slick-theme.scss */
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+/* line 162, ../scss/_slick-theme.scss */
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+/* line 164, ../scss/_slick-theme.scss */
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+/* line 168, ../scss/_slick-theme.scss */
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 185, ../scss/_slick-theme.scss */
+.slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 0.75;
+}
+
+/* Slider */
+/* line 3, ../scss/_slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 18, ../scss/_slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 25, ../scss/_slick.scss */
+.slick-list:focus {
+  outline: none;
+}
+/* line 29, ../scss/_slick.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 34, ../scss/_slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 43, ../scss/_slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+/* line 49, ../scss/_slick.scss */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+/* line 55, ../scss/_slick.scss */
+.slick-track:after {
+  clear: both;
+}
+/* line 59, ../scss/_slick.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 63, ../scss/_slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+/* line 67, ../scss/_slick.scss */
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+/* line 70, ../scss/_slick.scss */
+.slick-slide img {
+  display: block;
+}
+/* line 73, ../scss/_slick.scss */
+.slick-slide.slick-loading img {
+  display: none;
+}
+/* line 79, ../scss/_slick.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+/* line 83, ../scss/_slick.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+/* line 87, ../scss/_slick.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+/* line 91, ../scss/_slick.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 97, ../scss/_slick.scss */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
